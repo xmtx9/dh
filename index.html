@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>小茗同学专用导航</title>
+    <style>
+        :root {
+            /* 主色调：深藏青色，沉稳大气 */
+            --primary-color: #2c3e50; 
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-top: 8px;
+        }
+
+        /* 导航容器 */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            width: 92%;
+            max-width: 420px;
+        }
+
+        .nav-card {
+            background: var(--card-bg);
+            padding: 25px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--primary-color);
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        
+        .nav-card:active {
+            transform: scale(0.97);
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        /* 图标样式 */
+        .icon {
+            font-size: 2.8rem;
+            margin-bottom: 12px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .title {
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 25px;
+            font-size: 0.85rem;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀小茗同学导航</h1>
+        <p>乾坤妙法 · 尽在掌握</p>
+    </header>
+
+    <div class="container">
+        <a href="https://dj2828666-hub.github.io/luopan0003/" class="nav-card">
+            <div class="icon">🧭</div>
+            <div class="title">九宫格罗盘</div>
+        </a>
+
+        <a href="https://dj2828666-hub.github.io/05/" class="nav-card">
+            <div class="icon">🎨</div>
+            <div class="title">五行助运穿衣</div>
+        </a>
+
+        <a href="https://dj2828666-hub.github.io/06/" class="nav-card">
+            <div class="icon">✋</div>
+            <div class="title">小六爻掐指术</div>
+        </a>
+
+        <a href="#" class="nav-card">
+            <div class="icon">💞</div>
+            <div class="title">婚姻婚配方位</div>
+        </a>
+
+        <a href="#" class="nav-card">
+            <div class="icon">📜</div>
+            <div class="title">命宫计算</div>
+        </a>
+
+        <a href="#" class="nav-card">
+            <div class="icon">☯️</div>
+            <div class="title">象数疗法</div>
+        </a>
+    </div>
+
+    <footer>
+        © 2026 小茗同学 · 潜心研发
+    </footer>
+
+</body>
+</html>
