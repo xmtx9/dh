@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>小茗同学专用导航</title>
+    <title>改命实用工具箱</title>
     <style>
         :root {
-            /* 主色调：深藏青色，沉稳大气 */
             --primary-color: #2c3e50; 
             --bg-color: #f0f2f5;
             --card-bg: #ffffff;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
             background-color: var(--bg-color);
             margin: 0;
-            padding: 20px 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
+        /* 头部样式：确保绝对居中对齐 */
         header {
+            margin-top: 40px;
             margin-bottom: 30px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
         }
 
         header h1 {
@@ -35,12 +41,16 @@
             font-weight: 600;
             letter-spacing: 1px;
             margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         header p {
             font-size: 0.9rem;
             color: #7f8c8d;
-            margin-top: 8px;
+            margin: 10px 0 0 0;
+            letter-spacing: 1px;
         }
 
         /* 导航容器 */
@@ -65,18 +75,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
             border: 1px solid rgba(0,0,0,0.03);
         }
         
         .nav-card:active {
             transform: scale(0.97);
             background-color: #f8f9fa;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
         }
 
-        /* 图标样式 */
+        /* 图标样式：严格保持 2.8rem */
         .icon {
             font-size: 2.8rem;
             margin-bottom: 12px;
@@ -89,33 +96,36 @@
             line-height: 1.4;
         }
 
+        /* 页脚样式：往上调了一点 */
         footer {
-            margin-top: auto;
-            padding: 25px;
+            margin-top: 50px; /* 增加与上方卡片的间距 */
+            padding-bottom: 60px; /* 增加底部留白，让文字视觉上移 */
             font-size: 0.85rem;
             color: #95a5a6;
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>🚀小茗同学导航</h1>
-        <p>乾坤妙法 · 尽在掌握</p>
+        <h1>🚀 改命实用工具箱</h1>
+        <p>正心正念 · 修好当下</p>
     </header>
 
     <div class="container">
-        <a href="https://dj2828666-hub.github.io/luopan0003/" class="nav-card">
+        <a href="https://xmtx3.github.io/1/" class="nav-card">
             <div class="icon">🧭</div>
             <div class="title">九宫格罗盘</div>
         </a>
 
-        <a href="https://dj2828666-hub.github.io/05/" class="nav-card">
+        <a href="https://xmtx3.github.io/2/" class="nav-card">
             <div class="icon">🎨</div>
             <div class="title">五行助运穿衣</div>
         </a>
 
-        <a href="https://dj2828666-hub.github.io/06/" class="nav-card">
+        <a href="https://xmtx3.github.io/3/" class="nav-card">
             <div class="icon">✋</div>
             <div class="title">小六爻掐指术</div>
         </a>
@@ -137,7 +147,7 @@
     </div>
 
     <footer>
-        © 2026 小茗同学 · 潜心研发
+        © 2026 · Dy：小茗同学
     </footer>
 
 </body>
